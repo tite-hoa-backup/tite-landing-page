@@ -2,12 +2,14 @@
   div#home
     Header
     Hero
+    Download.section__each
     Footer
 </template>
 
 <script>
 import Header from '@/components/Header'
 import Hero from '@/components/Hero'
+import Download from '@/components/Download'
 import Footer from '@/components/Footer'
 
 export default {
@@ -22,6 +24,7 @@ export default {
   components: {
     Header,
     Hero,
+    Download,
     Footer
   },
 
@@ -31,5 +34,9 @@ export default {
 <style lang="scss">
 #hero {
   margin-top: 56px;
+}
+
+.section__each {
+  padding: 48px 0 80px;
 }
 </style>
