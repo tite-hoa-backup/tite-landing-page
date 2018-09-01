@@ -9,6 +9,12 @@
           src="../assets/dist/launcher.svg"
         )
         p.header__left--text {{ serviceKo }} - {{ serviceEn }}
+
+      div.header__right(
+        v-scroll-to="{el: '#download', duration: 0, offset: -54}"
+        v-tooltip.bottom="{content: dlText + '받기', delay: {show: 500, hide: 100}}"
+      )
+        p.header__right--text {{ dlText }}
 </template>
 
 <script>
@@ -21,6 +27,7 @@ export default {
     return {
       serviceKo: globalVar.serviceKo,
       serviceEn: globalVar.serviceEn,
+      dlText: '어플 다운로드',
     }
   },
 }
@@ -35,6 +42,7 @@ export default {
   z-index: 10;
   position: fixed;
   height: $grid14x;
+  font-weight: 900;
   background-color: #fff;
   @include box-shadow();
 
@@ -48,10 +56,20 @@ export default {
     }
 
     .header__left--text {
-      font-weight: 900;
       margin-left: $grid2x;
       display: inline-block;
       transform: translateY(-75%);
+    }
+  }
+
+  .header__right {
+    float: right;
+    color: $brand;
+    cursor: pointer;
+    transition: color .25s ease;
+
+    &:hover {
+      color: $brand-hover;
     }
   }
 }

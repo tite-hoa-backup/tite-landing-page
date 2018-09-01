@@ -51,12 +51,12 @@ export default {
 @import '../style/style.scss';
 
 #download {
-  height: 640px;
+  height: 560px;
   overflow-y: hidden;
   border-top: 1px solid $texteee;
 
-  @media #{$pablet} {
-    height: 560px;
+  @media #{$tablet} {
+    height: 480px;
   }
 
   .download__title {
@@ -100,7 +100,7 @@ export default {
       width: 320px;
       margin: 0 auto;
 
-      @media #{$pablet} {
+      @media #{$tablet} {
         width: 280px;
       }
     }
