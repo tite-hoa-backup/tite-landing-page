@@ -8,7 +8,7 @@
         img.header__left--img(
           src="../assets/dist/launcher.svg"
         )
-        p.header__left--text {{ serviceKo }} - {{ serviceEn }}
+        p.header__left--text {{ serviceKo }}, {{ serviceEn }}
 
       div.header__right(
         v-scroll-to="{el: '#download', duration: 0, offset: -54}"
@@ -71,6 +71,10 @@ export default {
     &:hover {
       color: $brand-hover;
     }
+
+    // .header__right--text {
+    //   vertical-align: middle;
+    // }
   }
 }
 </style>

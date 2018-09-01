@@ -3,7 +3,13 @@
     div.hero__dim
       div.container
         div.hero__container
-          h1.hero__container--text {{ serviceKo }} - {{ serviceEn }}
+          h1.hero__container--text
+            | {{ serviceKo }}, {{ serviceEn }}
+
+        button.hero__scrolldown(
+          v-scroll-to="{el: '#information', duration: 0, offset: -56}"
+        )
+          i.fa.fa-angle-down
 </template>
 
 <script>
@@ -36,7 +42,7 @@ $baseURI: '/src/assets/dist/hero.jpg';
   .hero__dim {
     height: 560px;
     position: relative;
-    background-color: $black16;
+    background-color: $black38;
 
     .hero__container {
       top: 50%;
@@ -52,6 +58,29 @@ $baseURI: '/src/assets/dist/hero.jpg';
         @media #{$middle} {
           @include font-size($grid6x);
         }
+      }
+    }
+
+    .hero__scrolldown {
+      left: 50%;
+      color: #fff;
+      bottom: $grid8x;
+      width: $grid12x;
+      height: $grid12x;
+      position: absolute;
+      display: inline-block;
+      border: 1px solid #fff;
+      transition: all .25s ease;
+      transform: translateX(-50%);
+      @include border-radius($grid12x);
+
+      &:hover {
+        background-color: $brand;
+        border: 1px solid transparent;
+      }
+
+      .fa-angle-down {
+        @include font-size($grid6x);
       }
     }
   }

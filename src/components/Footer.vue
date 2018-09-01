@@ -3,7 +3,12 @@
     div.container
       div.footer__copyright
         p.footer__copyright--text
-          | © {{ thisYear }} {{ nameKo }}. {{ nameEn }}., All Rights Reserved.
+          | © {{ thisYear }} {{ companyKo }}. {{ companyEn }}., All Rights Reserved.
+        p.footer__copyright--info
+          span 사업자등록번호: {{ companyID }}
+          span 대표이사: {{ companyCEO }}
+          span 주소: {{ companyAdr }}
+          span 대표전화: {{ callTo }}
 </template>
 
 <script>
@@ -15,8 +20,12 @@ export default {
   data () {
     return {
       year: '',
-      nameKo: globalVar.nameKo,
-      nameEn: globalVar.nameEn,
+      companyKo: globalVar.companyKo,
+      companyEn: globalVar.companyEn,
+      companyID: globalVar.companyID,
+      companyCEO: globalVar.companyCEO,
+      companyAdr: globalVar.companyAdr,
+      callTo: globalVar.callTo,
     }
   },
 
@@ -37,9 +46,23 @@ export default {
 
   .footer__copyright {
 
-    .footer__copyright--text {
+    .footer__copyright--text,
+    .footer__copyright--info {
       color: $text999;
       @include font-size($grid3x);
+      @include line-height($grid2x);
+
+      span {
+        @include font-size($grid3x);
+        @include line-height($grid2x);
+
+        &:not(:last-child) {
+
+          &:after {
+            content: " | ";
+          }
+        }
+      }
     }
   }
 }
