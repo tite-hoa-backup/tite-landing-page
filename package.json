@@ -11,10 +11,14 @@
   },
   "dependencies": {
     "dotenv-webpack": "^1.5.7",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-watch": "^5.0.1",
     "v-tooltip": "^2.0.0-rc.33",
     "vue": "^2.5.11",
     "vue-meta": "^1.5.3",
-    "vue-router": "^3.0.1"
+    "vue-progressbar": "^0.7.5",
+    "vue-router": "^3.0.1",
+    "vue-scrollto": "^2.11.0"
   },
   "browserslist": [
     "> 1%",
