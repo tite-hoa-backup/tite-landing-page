@@ -1,0 +1,153 @@
+#terms {
+
+  h1 {
+    text-align: left;
+  }
+
+  .terms-wrapper {
+    color: $text333;
+    margin: 0 auto;
+    padding: $grid32x 0 $grid32x;
+    max-width: 640px;
+    @include line-height(18px);
+
+    p {
+      margin-bottom: $grid2x;
+      @include font-size($grid4x);
+      @include line-height(18px);
+    }
+
+    h1 {
+      color: $text333;
+      @include font-size($grid8x);
+    }
+
+    h3 {
+      color: $text333;
+      margin-top: $grid16x;
+      margin-bottom: $grid2x;
+      @include font-size($grid6x);
+      @include line-height($grid6x);
+    }
+
+    ul {
+
+      li {
+        margin-bottom: $grid2x;
+        list-style-type: disc !important;
+      }
+    }
+
+    li {
+      margin-left: $grid6x;
+    }
+
+    .terms-list {
+      margin-top: $grid4x;
+
+      li {
+        margin: $grid 0;
+      }
+    }
+
+    ol {
+      margin: 0 0 0 1.5em;
+      padding: 0;
+      counter-reset: item;
+
+      @media #{$mobile} {
+        margin: 0 0 1em;
+      }
+
+      > li {
+        margin: 0;
+        margin-bottom: $grid2x;
+        padding: 0 0 0 1.25em;
+        text-indent: -1.25em;
+        list-style-type: none;
+        counter-increment: item;
+
+        > ul {
+          padding-left: 1.5em !important;
+
+          > li {
+            padding: 0 !important;
+            text-indent: 0 !important;
+          }
+        }
+
+        > ol {
+          counter-reset: item;
+
+          > li {
+            display: block;
+            counter-increment: item;
+
+            &:before {
+              content: counters(item, ".") "";
+            }
+          }
+        }
+
+        @media #{$mobile} {
+          padding: 0 0 0 1em;
+          text-indent: -1em;
+        }
+
+        &:before {
+          display: inline-block;
+          width: 1em;
+          padding-right: $grid2x;
+          font-weight: bolder;
+          text-align: right;
+          content: counter(item) ".";
+
+          @media #{$mobile} {
+            padding-right: $grid;
+          }
+        }
+
+        > ul, > ol {
+
+          > li {
+            margin: 0;
+            padding: 0 0 0 1.5em;
+            text-indent: -1.5em;
+
+            @media #{$mobile}{
+              padding: 0 0 0 1.25em;
+              text-indent: -1.25em;
+            }
+          }
+        }
+      }
+    }
+
+    @media #{$tablet} {
+      padding: $grid24x $grid8x $grid24x;
+    }
+
+    @media #{$pablet} {
+      padding: $grid12x $grid6x $grid16x;
+
+      h1 {
+        @include font-size(28px);
+      }
+
+      h3 {
+        @include font-size(21px);
+      }
+    }
+
+    @media #{$mobile} {
+      padding: $grid8x $grid4x $grid16x;
+
+      h1 {
+        @include font-size($grid6x);
+      }
+      h3 {
+        @include font-size(21px);
+      }
+    }
+  }
+}

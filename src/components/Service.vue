@@ -51,7 +51,7 @@ export default {
     margin: 0 auto;
     @include grid-layout(3, 100px, $grid8x);
 
-    @media #{$landsc} {
+    @media #{$middle} {
       @include grid-layout(1, 100px, $grid8x);
     }
 

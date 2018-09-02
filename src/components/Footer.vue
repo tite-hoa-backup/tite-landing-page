@@ -4,15 +4,28 @@
       div.footer__copyright
         p.footer__copyright--text
           | © {{ thisYear }} {{ companyKo }}. {{ companyEn }}., All Rights Reserved.
+
         p.footer__copyright--info
           span 사업자등록번호: {{ companyID }}
           span 대표이사: {{ companyCEO }}
           span 주소: {{ companyAdr }}
           span 대표전화: {{ callTo }}
+
+        p.footer__terms
+          router-link.footer__terms--each(
+            :key="key"
+            :to="'tos/' + value"
+            target="_blank"
+            v-tooltip.bottom="{content: key + '(새 탭)', delay: {show: 500, hide: 100}}"
+            v-for="(value, key) in tos"
+          ) {{ key }}
 </template>
 
 <script>
 import {globalVar} from '@/globalVar'
+import Geolocate from '@/components/tos/Geolocate'
+import Privacy from '@/components/tos/Privacy'
+import Terms from '@/components/tos/Terms'
 
 export default {
   name: 'footer-el',
@@ -26,6 +39,11 @@ export default {
       companyCEO: globalVar.companyCEO,
       companyAdr: globalVar.companyAdr,
       callTo: globalVar.callTo,
+      tos: {
+        위치기반서비스이용약관: 'Geolocate',
+        개인정보처리방침: 'Privacy',
+        타이트이용약관: 'Terms',
+      }
     }
   },
 
@@ -48,17 +66,12 @@ export default {
     color: $text999;
 
     .footer__copyright--text,
-    .footer__copyright--info {
+    .footer__copyright--info,
+    .footer__terms {
       @include font-size($grid3x);
-      @include line-height($grid2x);
-
-      @media #{$pablet} {
-      @include line-height($grid3x);
-      }
 
       span {
         @include font-size($grid3x);
-        @include line-height($grid2x);
 
         &:not(:last-child) {
 
@@ -69,10 +82,27 @@ export default {
       }
     }
 
-    .footer__copyright--text, {
+    .footer__copyright--text {
       color: $text333;
       font-weight: 900;
     }
+
+    .footer__copyright--text,
+    .footer__copyright--info {
+      margin-bottom: -#{$grid2x};
+    }
+
+    .footer__terms--each {
+      color: $text999;
+
+      &:not(:first-child) {
+
+        &::before {
+          content: " | ";
+        }
+      }
+    }
   }
 }
+
 </style>

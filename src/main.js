@@ -6,6 +6,8 @@ import VueScrollTo from 'vue-scrollto'
 import VueProgressBar from 'vue-progressbar'
 import {globalVar} from '@/globalVar'
 
+import '@/style/style.scss'
+
 Vue.use(VTooltip)
 Vue.use(VueScrollTo)
 Vue.use(VueProgressBar, {

@@ -43,6 +43,6 @@ export default {
 }
 
 .section__each {
-  padding: 48px 0 64px;
+  padding: 64px 0 80px;
 }
 </style>

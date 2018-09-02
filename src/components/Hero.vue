@@ -43,9 +43,9 @@ $baseURI: '/src/assets/dist/hero.jpg';
 
   .hero__dim {
     height: 560px;
-    max-height: calc(96vh - #{$grid14x});
     position: relative;
     background-color: $black38;
+    max-height: calc(96vh - #{$grid14x});
 
     .hero__container {
       top: 50%;

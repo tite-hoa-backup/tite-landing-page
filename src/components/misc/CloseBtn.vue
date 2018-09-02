@@ -1,0 +1,42 @@
+<template lang="pug">
+  div#closebtn
+    a.global__cta--link(
+      @click="closeWindow"
+    )
+      button.global__cta--btn 창 닫기
+</template>
+
+<script>
+export default {
+  name: 'closebtn',
+
+  methods: {
+    closeWindow () {
+      window.open("about:blank","_self").close()
+      window.postMessage('close')
+    }
+  },
+}
+</script>
+
+<style lang="scss">
+@import '../../style/style.scss';
+
+.global__cta--btn {
+  color: $brand;
+  display: block;
+  width: $grid48x;
+  height: $grid14x;
+  font-weight: 900;
+  border-radius: $grid48x;
+  border: 2px solid $brand;
+  transition: all .25s ease;
+  margin: -#{$grid8x} auto $grid32x !important;
+
+  &:hover {
+    color: #fff;
+    background-color: $brand;
+  }
+}
+
+</style>

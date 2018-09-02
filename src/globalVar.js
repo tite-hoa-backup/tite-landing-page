@@ -2,6 +2,7 @@ import Vue from 'vue'
 
 export const globalVar = new Vue ({
   data: {
+    companyShort: '타이트',
     companyKo: '타이트 주식회사',
     companyEn: 'Tite, Ltd',
     companyID: '452-87-01012',
@@ -15,5 +16,9 @@ export const globalVar = new Vue ({
 
     iosStore: '#',
     androidStore: '#',
+
+    geolocate: '위치기반서비스이용약관',
+    privacy: '개인정보처리방침',
+    terms: '이용약관',
   }
 })
