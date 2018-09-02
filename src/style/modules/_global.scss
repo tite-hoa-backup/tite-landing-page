@@ -71,6 +71,11 @@ h1 {
   font-weight: 300;
   @include font-size($grid8x);
   @include line-height($grid8x);
+
+  @media #{$pablet} {
+    @include font-size($grid7x);
+    @include line-height($grid7x);
+  }
 }
 
 h3 {

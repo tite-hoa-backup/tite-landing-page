@@ -52,6 +52,10 @@ export default {
       @include font-size($grid3x);
       @include line-height($grid2x);
 
+      @media #{$pablet} {
+      @include line-height($grid3x);
+      }
+
       span {
         @include font-size($grid3x);
         @include line-height($grid2x);

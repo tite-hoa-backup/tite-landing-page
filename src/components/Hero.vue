@@ -43,6 +43,7 @@ $baseURI: '/src/assets/dist/hero.jpg';
 
   .hero__dim {
     height: 560px;
+    max-height: calc(96vh - #{$grid14x});
     position: relative;
     background-color: $black38;
 
@@ -58,9 +59,9 @@ $baseURI: '/src/assets/dist/hero.jpg';
       .hero__container--text {
         font-weight: 900;
 
-        // @media #{$middle} {
-        //   @include font-size($grid6x);
-        // }
+        @media #{$pablet} {
+          @include font-size($grid8x);
+        }
       }
 
       .hero__container--subtext {
