@@ -2,6 +2,7 @@
   div#home
     Header
     Hero
+    Service.section__each
     Information.section__each
     Download.section__each
     Footer
@@ -10,6 +11,7 @@
 <script>
 import Header from '@/components/Header'
 import Hero from '@/components/Hero'
+import Service from '@/components/Service'
 import Information from '@/components/Information'
 import Download from '@/components/Download'
 import Footer from '@/components/Footer'
@@ -26,6 +28,7 @@ export default {
   components: {
     Header,
     Hero,
+    Service,
     Information,
     Download,
     Footer
@@ -40,6 +43,6 @@ export default {
 }
 
 .section__each {
-  padding: 48px 0 80px;
+  padding: 48px 0 64px;
 }
 </style>

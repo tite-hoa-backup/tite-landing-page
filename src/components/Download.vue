@@ -51,16 +51,15 @@ export default {
 @import '../style/style.scss';
 
 #download {
-  height: 560px;
+  height: 640px;
   overflow-y: hidden;
   border-top: 1px solid $texteee;
 
   @media #{$tablet} {
-    height: 480px;
+    height: 560px;
   }
 
   .download__title {
-    font-weight: 300;
     text-align: center;
     margin-bottom: $grid8x;
   }

@@ -45,10 +45,10 @@ export default {
   border-top: 1px solid $stroke;
 
   .footer__copyright {
+    color: $text999;
 
     .footer__copyright--text,
     .footer__copyright--info {
-      color: $text999;
       @include font-size($grid3x);
       @include line-height($grid2x);
 
@@ -63,6 +63,11 @@ export default {
           }
         }
       }
+    }
+
+    .footer__copyright--text, {
+      color: $text333;
+      font-weight: 900;
     }
   }
 }

@@ -5,9 +5,11 @@
         div.hero__container
           h1.hero__container--text
             | {{ serviceKo }}, {{ serviceEn }}
+          p.hero__container--subtext
+            | 진짜 이웃들의 소셜 커뮤니티
 
         button.hero__scrolldown(
-          v-scroll-to="{el: '#information', duration: 0, offset: -56}"
+          v-scroll-to="{el: '#service', duration: 0, offset: -56}"
         )
           i.fa.fa-angle-down
 </template>
@@ -47,17 +49,23 @@ $baseURI: '/src/assets/dist/hero.jpg';
     .hero__container {
       top: 50%;
       left: 50%;
+      color: #fff;
+      text-align: center;
       position: absolute;
       margin-right: -50%;
       transform: translate(-50%, -50%);
 
       .hero__container--text {
-        color: #fff;
-        text-align: center;
+        font-weight: 900;
 
-        @media #{$middle} {
-          @include font-size($grid6x);
-        }
+        // @media #{$middle} {
+        //   @include font-size($grid6x);
+        // }
+      }
+
+      .hero__container--subtext {
+        font-weight: 900;
+        margin-top: -#{$grid4x};
       }
     }
 
