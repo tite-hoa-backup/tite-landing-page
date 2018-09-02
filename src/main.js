@@ -4,7 +4,7 @@ import router from '@/router'
 import VTooltip from 'v-tooltip'
 import VueScrollTo from 'vue-scrollto'
 import VueProgressBar from 'vue-progressbar'
-import VueScrollReveal from 'vue-scroll-reveal';
+import VueScrollReveal from 'vue-scroll-reveal'
 import {globalVar} from '@/globalVar'
 
 import '@/style/style.scss'

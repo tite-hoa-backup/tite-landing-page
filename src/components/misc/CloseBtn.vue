@@ -4,7 +4,7 @@
       @click="closeWindow"
     )
       button.global__cta--btn(
-            v-scroll-reveal="{ delay: 250 }"
+        v-scroll-reveal="{ delay: 200 }"
       ) 창 닫기
 </template>
 
