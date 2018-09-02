@@ -135,10 +135,10 @@
                     <ul>
                         <li>
                             개인정보 관리책임자<br>
-                            성명: 김철수<br>
+                            성명: {{ companyCEO }}<br>
                             직책: 개인정보 보안담당<br>
                             직급: <br>
-                            연락처 : 010-0000-0000, privacy@tite.com<br>
+                            연락처 : {{ callTo }}, {{ mailTo }}<br>
                             ※ 개인정보 보호 담당부서로 연결됩니다.
                         </li>
                     </ul>
@@ -194,7 +194,15 @@ export default {
       geolocate: globalVar.geolocate,
       privacy: globalVar.privacy,
       terms: globalVar.terms,
+      companyCEO: globalVar.companyCEO,
+      callTo: globalVar.callTo,
+      mailTo: globalVar.mailTo,
     }
+  },
+
+  metaInfo: {
+    title: '로라, Local Life',
+    titleTemplate: '%s - 개인정보처리방침',
   },
 
   components: {

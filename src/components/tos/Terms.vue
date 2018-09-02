@@ -172,7 +172,15 @@ export default {
       geolocate: globalVar.geolocate,
       privacy: globalVar.privacy,
       terms: globalVar.terms,
+      companyCEO: globalVar.companyCEO,
+      callTo: globalVar.callTo,
+      mailTo: globalVar.mailTo,
     }
+  },
+
+  metaInfo: {
+    title: '로라, Local Life',
+    titleTemplate: '%s - 이용약관',
   },
 
   components: {

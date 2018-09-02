@@ -55,7 +55,7 @@
         </p>
             <ol class="terms-list">
                 <li>서비스 명: {{ companyShort }}</li>
-                <li>서비스 내용:이웃끼리 정보를 공유하고 소통할 수 있는 모바일 SNS</li>
+                <li>서비스 내용: 이웃끼리 정보를 공유하고 소통할 수 있는 모바일 SNS</li>
             </ol>
 
 
@@ -196,9 +196,9 @@
                 <li>회사의 상호, 주소 및 연락처는 아래와 같습니다.
                     <ul>
                         <li>상호: {{ companyKo }}</li>
-                        <li>대표: Ham Johnny Ilman</li>
-                        <li>주소: 대구</li>
-                        <li>대표전화: </li>
+                        <li>대표: {{ companyCEO }}</li>
+                        <li>주소: {{ companyAdr }}</li>
+                        <li>대표전화: {{ callTo }}</li>
                     </ul>
                 </li>
             </ol>
@@ -227,7 +227,16 @@ export default {
       geolocate: globalVar.geolocate,
       privacy: globalVar.privacy,
       terms: globalVar.terms,
+      companyCEO: globalVar.companyCEO,
+      companyAdr: globalVar.companyAdr,
+      callTo: globalVar.callTo,
+      mailTo: globalVar.mailTo,
     }
+  },
+
+  metaInfo: {
+    title: '로라, Local Life',
+    titleTemplate: '%s - 위치기반서비스이용약관',
   },
 
   components: {
