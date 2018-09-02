@@ -10,8 +10,11 @@
         )
           img.service__card--img(
             :src="'/src/assets/dist/' + key + '.svg'"
+            v-scroll-reveal="{ delay: value.delay }"
           )
-          p.service__card--title {{ value.title }}
+          p.service__card--title(
+            v-scroll-reveal="{ delay: value.delay }"
+          ) {{ value.title }}
 </template>
 
 <script>
@@ -23,12 +26,15 @@ export default {
       serviceList: {
         events: {
           title: '우리동네 이벤트 소식',
+          delay: 250,
         },
         store: {
           title: '이웃과의 중고장터',
+          delay: 400,
         },
         food: {
           title: '동네 주변 맛집리뷰',
+          delay: 550,
         }
       }
     }

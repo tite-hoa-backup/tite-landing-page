@@ -23,9 +23,9 @@
 
 <script>
 import {globalVar} from '@/globalVar'
-import Geolocate from '@/components/tos/Geolocate'
-import Privacy from '@/components/tos/Privacy'
-import Terms from '@/components/tos/Terms'
+import Geolocate from '@/pages/tos/Geolocate'
+import Privacy from '@/pages/tos/Privacy'
+import Terms from '@/pages/tos/Terms'
 
 export default {
   name: 'footer-el',

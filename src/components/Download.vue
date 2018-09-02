@@ -33,12 +33,12 @@ export default {
         ios: {
           src: '/src/assets/dist/appstore.svg',
           title: 'iPhone 앱스토어 다운받기',
-          href: globalVar.iosStore
+          href: globalVar.iosStore,
         },
         android: {
           src: '/src/assets/dist/playstore.svg',
           title: 'Android 구글 플레이스토어 다운받기',
-          href: globalVar.androidStore
+          href: globalVar.androidStore,
         }
       }
     }
