@@ -5,7 +5,7 @@
         div.hero__container
           h1.hero__container--text
             | {{ serviceKo }}, {{ serviceEn }}
-          p.hero__container--subtext
+          h3.hero__container--subtext
             | 진짜 이웃들의 소셜 커뮤니티
 
         button.hero__scrolldown(
@@ -65,8 +65,8 @@ $baseURI: '/src/assets/dist/hero.jpg';
       }
 
       .hero__container--subtext {
-        font-weight: 900;
-        margin-top: -#{$grid4x};
+        font-weight: 400;
+        margin-top: -#{$grid6x};
       }
     }
 

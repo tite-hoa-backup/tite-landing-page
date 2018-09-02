@@ -3,9 +3,9 @@ import VueRouter from 'vue-router'
 import Meta from 'vue-meta'
 
 import Home from '@/pages/Home'
-import Geolocate from '@/components/tos/Geolocate'
-import Privacy from '@/components/tos/Privacy'
-import Terms from '@/components/tos/Terms'
+import Geolocate from '@/pages/tos/Geolocate'
+import Privacy from '@/pages/tos/Privacy'
+import Terms from '@/pages/tos/Terms'
 
 Vue.use(VueRouter)
 Vue.use(Meta)

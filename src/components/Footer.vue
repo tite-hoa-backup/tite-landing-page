@@ -40,9 +40,9 @@ export default {
       companyAdr: globalVar.companyAdr,
       callTo: globalVar.callTo,
       tos: {
-        위치기반서비스이용약관: 'Geolocate',
-        개인정보처리방침: 'Privacy',
-        타이트이용약관: 'Terms',
+        위치기반서비스이용약관: 'geolocate',
+        개인정보처리방침: 'privacy',
+        타이트이용약관: 'terms',
       }
     }
   },
@@ -94,11 +94,17 @@ export default {
 
     .footer__terms--each {
       color: $text999;
+      transition: color .25s ease;
+
+      &:hover {
+        color: $text333;
+      }
 
       &:not(:first-child) {
 
         &::before {
           content: " | ";
+          color: $text999;
         }
       }
     }
