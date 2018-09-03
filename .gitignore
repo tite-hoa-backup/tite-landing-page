@@ -4,6 +4,7 @@ node_modules/
 # dist/
 .env
 *.log
+*.cache
 
 # Editor directories and files
 .idea

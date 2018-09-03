@@ -9,6 +9,8 @@ import {globalVar} from '@/globalVar'
 
 import '@/style/style.scss'
 
+// Kakao.init(process.env.KAKAO_KEY)
+
 Vue.use(VTooltip)
 Vue.use(VueScrollTo)
 Vue.use(VueScrollReveal)

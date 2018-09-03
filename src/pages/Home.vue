@@ -6,6 +6,7 @@
     Information.section__each
     Download.section__each
     Footer
+    Kakao
 </template>
 
 <script>
@@ -15,6 +16,7 @@ import Service from '@/components/Service'
 import Information from '@/components/Information'
 import Download from '@/components/Download'
 import Footer from '@/components/Footer'
+import Kakao from '@/components/misc/Kakao'
 
 export default {
   name: 'home',
@@ -31,7 +33,8 @@ export default {
     Service,
     Information,
     Download,
-    Footer
+    Footer,
+    Kakao
   },
 
 }

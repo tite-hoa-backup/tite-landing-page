@@ -10,10 +10,10 @@
         )
           img.service__card--img(
             :src="'/src/assets/dist/' + key + '.svg'"
-            v-scroll-reveal="{ delay: value.delay }"
           )
+            //- v-scroll-reveal="{ delay: value.delay }"
+            //- v-scroll-reveal="{ delay: value.delay }"
           p.service__card--title(
-            v-scroll-reveal="{ delay: value.delay }"
           ) {{ value.title }}
 </template>
 

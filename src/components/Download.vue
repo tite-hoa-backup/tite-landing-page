@@ -99,7 +99,7 @@ export default {
       width: 320px;
       margin: 0 auto;
 
-      @media #{$tablet} {
+      @media #{$pablet} {
         width: 280px;
       }
     }
