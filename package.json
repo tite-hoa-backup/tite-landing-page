@@ -10,6 +10,7 @@
     "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"
   },
   "dependencies": {
+    "axios": "^0.18.0",
     "dotenv-webpack": "^1.5.7",
     "gulp-imagemin": "^4.1.0",
     "gulp-watch": "^5.0.1",
@@ -20,7 +21,8 @@
     "vue-progressbar": "^0.7.5",
     "vue-router": "^3.0.1",
     "vue-scroll-reveal": "^1.0.8",
-    "vue-scrollto": "^2.11.0"
+    "vue-scrollto": "^2.11.0",
+    "vuex": "^3.0.1"
   },
   "browserslist": [
     "> 1%",
