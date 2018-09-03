@@ -42,10 +42,10 @@ export default {
 
 <style lang="scss">
 #hero {
-  margin-top: 56px;
+  margin-top: $grid14x;
 }
 
 .section__each {
-  padding: 64px 0 80px;
+  padding: $grid16x 0 $grid20x;
 }
 </style>

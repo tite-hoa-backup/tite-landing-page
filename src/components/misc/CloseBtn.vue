@@ -22,8 +22,6 @@ export default {
 </script>
 
 <style lang="scss">
-@import '../../style/style.scss';
-
 .global__cta--btn {
   color: $brand;
   display: block;

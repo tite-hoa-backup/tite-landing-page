@@ -7,8 +7,6 @@ import VueProgressBar from 'vue-progressbar'
 import VueScrollReveal from 'vue-scroll-reveal'
 import {globalVar} from '@/globalVar'
 
-import '@/style/style.scss'
-
 // Kakao.init(process.env.KAKAO_KEY)
 
 Vue.use(VTooltip)

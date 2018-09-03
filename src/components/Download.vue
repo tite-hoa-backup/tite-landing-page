@@ -48,8 +48,6 @@ export default {
 </script>
 
 <style lang="scss">
-@import '../style/style.scss';
-
 #download {
   height: 640px;
   overflow-y: hidden;
