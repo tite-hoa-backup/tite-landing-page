@@ -12,9 +12,9 @@
 
       div.header__right(
         v-scroll-to="{el: '#download', duration: 0, offset: -54}"
-        v-tooltip.bottom="{content: dlText + '받기', delay: {show: 500, hide: 100}}"
+        v-tooltip.bottom="{content: '어플 다운로드 받기', delay: {show: 500, hide: 100}}"
       )
-        p.header__right--text {{ dlText }}
+        p.header__right--text {{ $t('generic.download') }}
 </template>
 
 <script>
@@ -27,7 +27,6 @@ export default {
     return {
       serviceKo: globalVar.serviceKo,
       serviceEn: globalVar.serviceEn,
-      dlText: '어플다운로드',
     }
   },
 }

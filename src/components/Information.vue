@@ -3,7 +3,7 @@
     div.container
       div.information__text
         h1.information__text--title
-          | 로컬 라이프
+          | {{ $t('generic.title') }}
         h3.information__text--subtitle
           | {{ serviceKo }}는 나와 나의 이웃들을 위한
           <br>

@@ -1,7 +1,7 @@
 <template lang="pug">
   div#service
     div.container
-      h1.service__title 이웃과 함께하세요
+      h1.service__title {{ $t('generic.serviceTitle') }}
 
       div.service__card
         div.service__card--each(

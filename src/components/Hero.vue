@@ -6,7 +6,7 @@
           h1.hero__container--text
             | {{ serviceKo }}, {{ serviceEn }}
           h3.hero__container--subtext
-            | 진짜 이웃들의 소셜 커뮤니티
+            | {{ $t('generic.tagline') }}
 
         button.hero__scrolldown(
           v-scroll-to="{el: '#service', duration: 0, offset: -56}"
