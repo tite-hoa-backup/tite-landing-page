@@ -16,7 +16,6 @@ Vue.use(VueScrollTo)
 Vue.use(VueScrollReveal)
 Vue.use(VueProgressBar, {
   color: '#17C060',
-  failedColor: 'red',
   height: '2px'
 })
 

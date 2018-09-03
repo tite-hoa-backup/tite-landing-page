@@ -45,6 +45,9 @@ export default {
 
 <style lang="scss">
 @import '../style/style.scss';
+// @import '../style/modules/_grid.scss';
+// @import '../style/modules/_class.scss';
+// @import '../style/modules/_color.scss';
 
 #service {
 
