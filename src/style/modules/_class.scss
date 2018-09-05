@@ -2,10 +2,10 @@
   box-shadow
 ============================== */
 @mixin box-shadow         ($val:$grid2x, $val2:$grid4x, $color:$black08){
-  -webkit-box-shadow:  0 $val $val2 $color;
-  -ms-box-shadow:      0 $val $val2 $color;
-  -o-box-shadow:       0 $val $val2 $color;
-  box-shadow:          0 $val $val2 $color;
+  -webkit-box-shadow:    0 $val $val2 $color;
+  -ms-box-shadow:        0 $val $val2 $color;
+  -o-box-shadow:         0 $val $val2 $color;
+  box-shadow:            0 $val $val2 $color;
 }
 
 
@@ -14,7 +14,17 @@
   border-radius
 ============================== */
 @mixin border-radius($val:$grid4x){
-  border-radius: $val
+  border-radius:     $val
+}
+
+
+
+/* ==============================
+  border-radius
+============================== */
+@mixin transform($val){
+  -webkit-transform: $val;
+          transform: $val
 }
 
 

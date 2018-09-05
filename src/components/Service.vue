@@ -63,6 +63,11 @@ export default {
       .service__card--img {
         height: $grid24x;
         display: inline-block;
+        transition: transform .25s ease;
+
+        &:hover {
+          @include transform(scale(1.05));
+        }
       }
 
       .service__card--title {

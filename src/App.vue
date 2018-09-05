@@ -33,6 +33,7 @@ export default {
       this.$Progress.finish()
     })
   },
+
 }
 </script>
 

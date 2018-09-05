@@ -1,7 +1,7 @@
 <template lang="pug">
   div#download
     div.container
-      h1.download__title 어플로 간편하게 즐겨보세요
+      h1.download__title {{ $t('generic.downloadHeader') }}
 
       div.download__badge
         a.download__badge--link(

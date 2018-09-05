@@ -179,7 +179,7 @@ export default {
   },
 
   metaInfo: {
-    title: '로라, Local Life',
+    title: globalVar.serviceKo + ', ' + globalVar.serviceEn,
     titleTemplate: '%s - 이용약관',
   },
 

@@ -56,7 +56,7 @@ export default {
     .header__left--text {
       margin-left: $grid2x;
       display: inline-block;
-      transform: translateY(-75%);
+      @include transform(translateY(-75%));
     }
   }
 
@@ -71,7 +71,7 @@ export default {
     }
 
     .header__right--text {
-      transform: translateY(-10%);
+      @include transform(translateY(-10%));
     }
   }
 }

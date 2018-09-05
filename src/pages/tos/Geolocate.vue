@@ -243,7 +243,7 @@ export default {
   },
 
   metaInfo: {
-    title: '로라, Local Life',
+    title: globalVar.serviceKo + ', ' + globalVar.serviceEn,
     titleTemplate: '%s - 위치기반서비스이용약관',
   },
 

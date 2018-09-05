@@ -203,7 +203,7 @@ export default {
   },
 
   metaInfo: {
-    title: '로라, Local Life',
+    title: globalVar.serviceKo + ', ' + globalVar.serviceEn,
     titleTemplate: '%s - 개인정보처리방침',
   },
 
