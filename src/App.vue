@@ -18,6 +18,7 @@ export default {
     this.$Progress.finish()
   },
 
+  // load progressbar
   created () {
     this.$Progress.start()
     this.$router.beforeEach((to, from, next) => {

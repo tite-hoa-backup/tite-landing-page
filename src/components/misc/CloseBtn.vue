@@ -5,7 +5,7 @@
     )
       button.global__cta--btn(
         v-scroll-reveal="{ delay: 200 }"
-      ) 창 닫기
+      ) {{ $t('generic.close') }}
 </template>
 
 <script>
@@ -22,6 +22,7 @@ export default {
 </script>
 
 <style lang="scss">
+
 .global__cta--btn {
   color: $brand;
   display: block;
@@ -38,5 +39,4 @@ export default {
     background-color: $brand;
   }
 }
-
 </style>

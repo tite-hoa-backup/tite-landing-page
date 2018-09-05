@@ -10,6 +10,11 @@
           span 대표이사: {{ companyCEO }}
           span 주소: {{ companyAdr }}
           span 대표전화: {{ callTo }}
+          span.clipboard(
+            @click="toast"
+            v-clipboard:copy="mailTo"
+            v-tooltip.bottom="{content: '이메일 주소를 복사하려면 클릭하세요', delay: {show: 500, hide: 100}}"
+          ) 이메일: {{ mailTo }}
 
         p.footer__terms
           router-link.footer__terms--each(
@@ -22,10 +27,16 @@
 </template>
 
 <script>
+import Vue from 'vue'
 import {globalVar} from '@/globalVar'
 import Geolocate from '@/pages/tos/Geolocate'
 import Privacy from '@/pages/tos/Privacy'
 import Terms from '@/pages/tos/Terms'
+import Toasted from 'vue-toasted'
+import VueClipboard from 'vue-clipboard2'
+
+Vue.use(Toasted)
+Vue.use(VueClipboard)
 
 export default {
   name: 'footer-el',
@@ -39,11 +50,22 @@ export default {
       companyCEO: globalVar.companyCEO,
       companyAdr: globalVar.companyAdr,
       callTo: globalVar.callTo,
+      mailTo: globalVar.mailTo,
       tos: {
         위치기반서비스이용약관: 'geolocate',
         개인정보처리방침: 'privacy',
         타이트이용약관: 'terms',
       }
+    }
+  },
+
+  methods: {
+    toast () {
+      this.$toasted.show('이메일 주소가 복사되었습니다', {
+        theme: "primary",
+        position: "bottom-center",
+        duration : 2000
+      })
     }
   },
 
@@ -56,6 +78,7 @@ export default {
 </script>
 
 <style lang="scss">
+
 #footer {
   padding: $grid8x 0;
   border-top: 1px solid $stroke;
@@ -85,6 +108,10 @@ export default {
       font-weight: 900;
     }
 
+    .clipboard {
+      cursor: pointer;
+    }
+
     .footer__copyright--text,
     .footer__copyright--info {
       margin-bottom: -#{$grid2x};
@@ -108,5 +135,4 @@ export default {
     }
   }
 }
-
 </style>

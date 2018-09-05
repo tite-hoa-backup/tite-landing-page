@@ -8,9 +8,9 @@
           v-for="(value, key) in badges"
           :key="key"
           target="_blank"
+          :href="value.href"
           v-tooltip.bottom="{content: value.title, delay: {show: 500, hide: 100}}"
         )
-          //- :href="value.href"
           img.download__badge--each(
             :src="value.src"
           )
@@ -48,6 +48,7 @@ export default {
 </script>
 
 <style lang="scss">
+
 #download {
   height: 640px;
   overflow-y: hidden;
@@ -103,5 +104,4 @@ export default {
     }
   }
 }
-
 </style>

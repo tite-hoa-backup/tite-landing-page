@@ -26,6 +26,7 @@ export default {
 </script>
 
 <style lang="scss">
+
 #information {
   background-color: $brand;
   border-top: 1px solid $texteee;
