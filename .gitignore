@@ -6,6 +6,8 @@ node_modules/
 *.log
 *.cache
 
+bitbucket-pipelines.yml
+
 # Editor directories and files
 .idea
 *.suo

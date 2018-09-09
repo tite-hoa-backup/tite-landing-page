@@ -209,7 +209,13 @@ export default {
 
   components: {
     CloseBtn
-  }
+  },
+
+  updated () {
+    window.postMessage(document.title)
+    console.log(document.title)
+  },
+
 }
 </script>
 
