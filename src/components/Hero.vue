@@ -9,6 +9,7 @@
             | {{ $t('generic.tagline') }}
 
         button.hero__scrolldown(
+          v-ripple
           v-scroll-to="{el: '#service', duration: 0, offset: -56}"
         )
           i.fa.fa-angle-down
@@ -75,10 +76,10 @@ $baseURI: '/src/assets/dist/hero.jpg';
       bottom: $grid8x;
       width: $grid12x;
       height: $grid12x;
-      position: absolute;
-      display: inline-block;
       border: 1px solid #fff;
       transition: all .25s ease;
+      position: absolute !important;
+      display: inline-block !important;
       @include border-radius($grid12x);
       @include transform(translateX(-50%));
 

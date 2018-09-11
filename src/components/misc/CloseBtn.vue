@@ -4,8 +4,8 @@
       @click="closeWindow"
     )
       button.global__cta--btn(
+        v-ripple
       ) {{ $t('generic.close') }}
-        //- v-scroll-reveal="{ delay: 200 }"
 </template>
 
 <script>
@@ -18,6 +18,7 @@ export default {
       window.postMessage('close')
     }
   },
+
 }
 </script>
 

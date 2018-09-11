@@ -1,10 +1,11 @@
 import Vue from 'vue'
 import axios from 'axios'
 import App from '@/App.vue'
-import router from '@/router'
+import router from '@/routes'
 import VueI18n from 'vue-i18n'
 import VTooltip from 'v-tooltip'
 import VueScrollTo from 'vue-scrollto'
+import Ripple from 'vue-ripple-directive'
 import VueProgressBar from 'vue-progressbar'
 import VueScrollReveal from 'vue-scroll-reveal'
 import {globalVar} from '@/globalVar'
@@ -18,6 +19,7 @@ Vue.use(VueI18n) // locale
 Vue.use(VTooltip)
 Vue.use(VueScrollTo)
 Vue.use(VueScrollReveal)
+Vue.directive('ripple', Ripple)
 
 Vue.use(VueProgressBar, {
   color: '#17C060',
