@@ -1,7 +1,7 @@
 <template>
   <div id="terms">
     <div class="terms-wrapper">
-        <h1>{{ companyShort }} {{ terms }}</h1>
+        <h1>{{ serviceKo }} {{ terms }}</h1>
 
 
         <h3>제1조 (목적)</h3>
@@ -170,6 +170,7 @@ export default {
       companyShort: globalVar.companyShort,
       companyKo: globalVar.companyKo,
       geolocate: globalVar.geolocate,
+      serviceKo: globalVar.serviceKo,
       privacy: globalVar.privacy,
       terms: globalVar.terms,
       companyCEO: globalVar.companyCEO,

@@ -1,7 +1,7 @@
 <template>
   <div id="terms">
     <div class="terms-wrapper">
-        <h1>{{ companyShort }} {{ privacy }}</h1>
+        <h1>{{ serviceKo }} {{ privacy }}</h1>
         <p>
           {{ companyKo }}(이하 '{{ companyShort }}'라 합니다)는 이용자의 개인정보를 매우 소중히 생각합니다. {{ companyShort }}는 정보통신망 이용촉진 및 정보보호 등에 관한 법률, 개인정보보호법을 비롯한 개인정보 관련 법령을 준수하며, 이용자의 개인정보 보호 및 권익을 보호하고 개인정보와 관련한 이용자의 고충을 원활하게 처리할 수 있도록 다음과 같은 처리방침을 두고 있습니다.
         </p>
@@ -194,6 +194,7 @@ export default {
       companyShort: globalVar.companyShort,
       companyKo: globalVar.companyKo,
       geolocate: globalVar.geolocate,
+      serviceKo: globalVar.serviceKo,
       privacy: globalVar.privacy,
       terms: globalVar.terms,
       companyCEO: globalVar.companyCEO,
