@@ -13,7 +13,7 @@ import {globalVar} from '@/globalVar'
 Vue.config.productionTip = false
 Vue.prototype.$http = axios
 
-// Kakao.init(process.env.KAKAO_KEY) // -> .env
+Kakao.init(process.env.KAKAO_KEY) // -> .env
 
 Vue.use(VueI18n) // locale
 Vue.use(VTooltip)

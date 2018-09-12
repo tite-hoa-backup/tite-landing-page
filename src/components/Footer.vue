@@ -54,7 +54,7 @@ export default {
       tos: {
         위치기반서비스이용약관: 'geolocate',
         개인정보처리방침: 'privacy',
-        타이트이용약관: 'terms',
+        로라이용약관: 'terms',
       }
     }
   },

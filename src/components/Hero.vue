@@ -9,7 +9,6 @@
             | {{ $t('generic.tagline') }}
 
         button.hero__scrolldown(
-          v-ripple
           v-scroll-to="{el: '#service', duration: 0, offset: -56}"
         )
           i.fa.fa-angle-down
