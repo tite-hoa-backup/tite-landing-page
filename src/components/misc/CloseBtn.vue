@@ -4,7 +4,6 @@
       @click="closeWindow"
     )
       button.global__cta--btn(
-        v-ripple
       ) {{ $t('generic.close') }}
 </template>
 
