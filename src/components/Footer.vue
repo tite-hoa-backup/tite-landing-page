@@ -3,7 +3,7 @@
     div.container
       div.footer__copyright
         p.footer__copyright--text
-          | © {{ thisYear }} {{ companyKo }}. {{ companyEn }}., All Rights Reserved.
+          | ⓒ {{ thisYear }} {{ companyKo }}. {{ companyEn }}., All Rights Reserved.
 
         p.footer__copyright--info
           span 사업자등록번호: {{ companyID }}

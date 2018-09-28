@@ -9,11 +9,12 @@
           :key="key"
           target="_blank"
           :href="value.href"
-          v-tooltip.bottom="{content: value.title, delay: {show: 500, hide: 100}}"
+          v-tooltip.bottom="{content: value.title + '에서 다운받기', delay: {show: 500, hide: 100}}"
         )
           img.download__badge--each(
             :src="value.src"
           )
+          span.download__badge--text {{ value.title }}
 
       div.download__mockup
         img.download__mockup--img(
@@ -30,16 +31,16 @@ export default {
   data () {
     return {
       badges: {
+        android: {
+          src: '/src/assets/dist/playstore.png',
+          title: 'Google Play',
+          href: globalVar.androidStore,
+        },
         ios: {
-          src: '/src/assets/dist/appstore.svg',
-          title: 'iPhone 앱스토어 다운받기',
+          src: '/src/assets/dist/appstore.png',
+          title: 'App Store',
           href: globalVar.iosStore,
         },
-        android: {
-          src: '/src/assets/dist/playstore.svg',
-          title: 'Android 구글 플레이스토어 다운받기',
-          href: globalVar.androidStore,
-        }
       }
     }
   },
@@ -71,22 +72,35 @@ export default {
     display: inline-block;
 
     .download__badge--link {
+      height: $grid10x;
       display: inline-block;
+      border-radius: $grid16x;
       margin-bottom: $grid12x;
+      padding: $grid2x $grid6x 0;
+      border: 1px solid $texteee;
 
-      .download__badge--each {
-        width: $grid32x;
-        height: $grid10x;
-        transition: opacity .25s ease;
+      &:first-child {
+        margin-right: $grid4x;
 
-        &:hover {
-          opacity: .5;
-          cursor: pointer;
+        @media #{$ip6} {
+          margin-right: $grid;
+        }
+
+        @media #{$mobile} {
+          margin-right: 0;
         }
       }
 
-      &:not(:first-child) {
-        margin-left: $grid2x;
+      .download__badge--each {
+        width: $grid6x;
+        margin-right: $grid2x;
+        vertical-align: bottom;
+      }
+
+      .download__badge--text {
+        color: $text777;
+        font-weight: 700;
+        vertical-align: bottom;
       }
     }
   }
