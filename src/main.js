@@ -8,6 +8,7 @@ import App from '@/App.vue'
 import router from '@/routes'
 import VueI18n from 'vue-i18n'
 import VTooltip from 'v-tooltip'
+import VueRippler from 'vue-rippler'
 import VueScrollTo from 'vue-scrollto'
 import VueProgressBar from 'vue-progressbar'
 import VueScrollReveal from 'vue-scroll-reveal'
@@ -20,6 +21,7 @@ Kakao.init(process.env.KAKAO_KEY) // -> .env
 
 Vue.use(VueI18n) // locale
 Vue.use(VTooltip)
+Vue.use(VueRippler)
 Vue.use(VueScrollTo)
 Vue.use(VueScrollReveal)
 
