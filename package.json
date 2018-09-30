@@ -26,7 +26,6 @@
     "vue-progressbar": "^0.7.5",
     "vue-rippler": "^1.1.5",
     "vue-router": "^3.0.1",
-    "vue-scroll-reveal": "^1.0.8",
     "vue-scrollto": "^2.11.0",
     "vue-toasted": "^1.1.24",
     "vuex": "^3.0.1"
