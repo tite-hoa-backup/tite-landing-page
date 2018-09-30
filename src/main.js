@@ -17,9 +17,9 @@ import {globalVar} from '@/globalVar'
 Vue.config.productionTip = false
 Vue.prototype.$http = axios
 
-Kakao.init(process.env.KAKAO_KEY) // -> .env
+Kakao.init(process.env.KAKAO_KEY)
 
-Vue.use(VueI18n) // locale
+Vue.use(VueI18n)
 Vue.use(VTooltip)
 Vue.use(VueRippler)
 Vue.use(VueScrollTo)
@@ -30,7 +30,6 @@ Vue.use(VueProgressBar, {
   height: '2px'
 })
 
-// set locale
 import {messages} from './added'
 window.i18n = new VueI18n({
   locale: 'ko',
