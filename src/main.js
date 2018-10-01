@@ -1,6 +1,7 @@
 import 'babel-polyfill'
-import 'event-source-polyfill'
 import 'es6-promise/auto'
+import 'event-source-polyfill'
+import 'promise-polyfill/src/polyfill'
 
 import Vue from 'vue'
 import axios from 'axios'
@@ -22,7 +23,6 @@ Vue.use(VueI18n)
 Vue.use(VTooltip)
 Vue.use(VueRippler)
 Vue.use(VueScrollTo)
-
 Vue.use(VueProgressBar, {
   color: '#17C060',
   height: '2px'
