@@ -9,6 +9,8 @@
             | {{ $t('generic.tagline') }}
 
         button.hero__scrolldown(
+          @click="start"
+          @mouseleave="stop"
           v-scroll-to="{el: '#service', duration: 0, offset: -56}"
         )
           i.fa.fa-angle-down
@@ -25,6 +27,25 @@ export default {
       serviceKo: globalVar.serviceKo,
       serviceEn: globalVar.serviceEn,
     }
+  },
+
+  methods: {
+    start () {
+      this.$confetti.start({
+        shape: 'circle',
+        colors: [
+          '#14A251',
+          '#EF685E',
+          '#FAD06A',
+          '#fff',
+          'rgba(0,0,0,0)',
+          'transparent',
+        ],
+      })
+    },
+    stop () {
+      this.$confetti.stop()
+    },
   },
 
 }
