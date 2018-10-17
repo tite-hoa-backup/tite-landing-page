@@ -11,7 +11,6 @@ import VueI18n from 'vue-i18n'
 import VTooltip from 'v-tooltip'
 import VueRippler from 'vue-rippler'
 import VueScrollTo from 'vue-scrollto'
-import VueConfetti from 'vue-confetti'
 import VueProgressBar from 'vue-progressbar'
 import {globalVar} from '@/globalVar'
 
@@ -24,7 +23,6 @@ Vue.use(VueI18n)
 Vue.use(VTooltip)
 Vue.use(VueRippler)
 Vue.use(VueScrollTo)
-Vue.use(VueConfetti)
 Vue.use(VueProgressBar, {
   color: '#17C060',
   height: '2px'
