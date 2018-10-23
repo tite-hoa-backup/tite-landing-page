@@ -11,7 +11,7 @@
           :href="value.href"
           v-tooltip.bottom="{content: value.title + '에서 다운받기', delay: {show: 500, hide: 100}}"
         )
-          img.download__badge--each(
+          progressive-img.download__badge--each(
             :src="value.src"
           )
           span.download__badge--text {{ value.title }}

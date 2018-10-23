@@ -12,6 +12,7 @@ import VTooltip from 'v-tooltip'
 import VueRippler from 'vue-rippler'
 import VueScrollTo from 'vue-scrollto'
 import VueProgressBar from 'vue-progressbar'
+import VueProgressiveImage from 'vue-progressive-image'
 import {globalVar} from '@/globalVar'
 
 Vue.config.productionTip = false
@@ -23,6 +24,7 @@ Vue.use(VueI18n)
 Vue.use(VTooltip)
 Vue.use(VueRippler)
 Vue.use(VueScrollTo)
+Vue.use(VueProgressiveImage)
 Vue.use(VueProgressBar, {
   color: '#17C060',
   height: '2px'
