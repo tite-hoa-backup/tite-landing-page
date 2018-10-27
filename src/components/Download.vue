@@ -76,7 +76,7 @@ export default {
       display: inline-block;
       border-radius: $grid16x;
       margin-bottom: $grid12x;
-      padding: $grid2x $grid6x 0;
+      padding: $grid2x $grid4x 0;
       border: 1px solid $texteee;
 
       &:first-child {
@@ -87,7 +87,7 @@ export default {
         }
 
         @media #{$mobile} {
-          margin-right: 0;
+          margin-right: $grid2x;
         }
       }
 

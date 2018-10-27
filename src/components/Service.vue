@@ -43,8 +43,8 @@ export default {
 #service {
 
   .service__title {
-    text-align: center;
     margin-bottom: $grid8x;
+    text-align: center !important;
   }
 
   .service__card {
@@ -57,8 +57,8 @@ export default {
 
     .service__card--each {
       margin: 0 auto;
-      text-align: center;
       margin-top: $grid4x;
+      text-align: center !important;
 
       .service__card--img {
         height: $grid24x;
@@ -71,8 +71,8 @@ export default {
       }
 
       .service__card--title {
-        text-align: center;
         margin: $grid2x 0 $grid6x;
+        text-align: center !important;
 
         @media #{$pablet} {
           margin-top: 0;
