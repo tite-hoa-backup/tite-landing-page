@@ -5,13 +5,19 @@
 </template>
 
 <script>
+import {globalVar} from '@/globalVar'
+
 export default {
   name: 'app',
 
   data () {
     return {
-
     }
+  },
+
+  metaInfo: {
+    title: globalVar.serviceKo + ', ' + globalVar.serviceEn,
+    titleTemplate: '%s',
   },
 
   mounted () {

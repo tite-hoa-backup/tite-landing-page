@@ -205,7 +205,7 @@ export default {
 
   metaInfo: {
     title: globalVar.serviceKo + ', ' + globalVar.serviceEn,
-    titleTemplate: '%s - 개인정보처리방침',
+    titleTemplate: '%s - ' + globalVar.privacy,
   },
 
   components: {

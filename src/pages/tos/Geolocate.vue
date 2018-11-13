@@ -245,7 +245,7 @@ export default {
 
   metaInfo: {
     title: globalVar.serviceKo + ', ' + globalVar.serviceEn,
-    titleTemplate: '%s - 위치기반서비스이용약관',
+    titleTemplate: '%s - ' + globalVar.geolocate,
   },
 
   components: {

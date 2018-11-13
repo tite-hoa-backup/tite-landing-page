@@ -181,7 +181,7 @@ export default {
 
   metaInfo: {
     title: globalVar.serviceKo + ', ' + globalVar.serviceEn,
-    titleTemplate: '%s - 이용약관',
+    titleTemplate: '%s - ' + globalVar.terms,
   },
 
   components: {
