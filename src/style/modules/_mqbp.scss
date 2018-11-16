@@ -18,6 +18,7 @@ $mini:    "screen and (max-width : 320px )";
 $chrome:  "screen and (-webkit-min-device-pixel-ratio:0) and (min-resolution:.001dpcm)";
 $firefox: "screen and (min--moz-device-pixel-ratio:0) and (min-resolution: .001dpcm)";
 $ie:      "screen and (-ms-high-contrast: active), (-ms-high-contrast: none)";
+$safari:  "screen and (-webkit-min-device-pixel-ratio:0)";
 
 // edge
 // @supports (-ms-ime-align:auto)

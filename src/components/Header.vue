@@ -44,6 +44,12 @@ export default {
   background-color: #fff;
   @include box-shadow();
 
+  // @media #{$safari} {
+  //   backdrop-filter: saturate(180%) blur(20px);
+  //   -webkit-backdrop-filter: saturate(180%) blur(20px);
+  //   background-color: rgba(255,255,255,0.85) !important;
+  // }
+
   .header__left {
     cursor: pointer;
     height: $grid14x;
