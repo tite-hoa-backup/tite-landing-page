@@ -3,6 +3,7 @@ import VueRouter from 'vue-router'
 import Meta from 'vue-meta'
 
 import Home from '@/pages/Home'
+import About from '@/pages/About'
 import Geolocate from '@/pages/tos/Geolocate'
 import Privacy from '@/pages/tos/Privacy'
 import Terms from '@/pages/tos/Terms'
@@ -17,6 +18,11 @@ export default new VueRouter({
       path: '/',
       name: 'home',
       component: Home,
+    },
+    {
+      path: '/about',
+      name: 'about',
+      component: About,
     },
     {
       path: '*',

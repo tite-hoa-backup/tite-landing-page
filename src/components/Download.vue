@@ -83,11 +83,12 @@ export default {
         margin-right: $grid4x;
 
         @media #{$ip6} {
-          margin-right: $grid;
+          margin-right: $grid2x;
         }
 
         @media #{$mobile} {
           margin-right: $grid2x;
+          padding: $grid2x $grid2x 0;
         }
       }
 

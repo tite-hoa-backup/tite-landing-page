@@ -71,6 +71,7 @@ export default {
       }
 
       .service__card--title {
+        font-weight: 700;
         margin: $grid2x 0 $grid6x;
         text-align: center !important;
 
