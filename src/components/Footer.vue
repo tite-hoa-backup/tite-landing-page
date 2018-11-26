@@ -80,11 +80,18 @@ export default {
 <style lang="scss">
 
 #footer {
-  padding: $grid8x 0;
-  border-top: 1px solid $stroke;
+  padding: $grid12x $grid4x;
+  background-color: #f9f9f9;
+  // border-top: 1px solid $stroke;
+
+  @media #{$pablet} {
+    padding: $grid12x $grid4x $grid16x;
+  }
 
   .footer__copyright {
+    margin: 0 auto;
     color: $text999;
+    // max-width: 640px;
 
     .footer__copyright--text,
     .footer__copyright--info,

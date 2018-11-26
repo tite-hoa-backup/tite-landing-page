@@ -14,7 +14,7 @@ export const globalVar = new Vue ({
 
     serviceKo: '로라',
     serviceKoFull: '로컬라이프',
-    serviceEn: 'Local Life',
+    serviceEn: 'LocalLife',
 
     iosStore: '#',
     androidStore: '#',

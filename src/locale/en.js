@@ -1,7 +1,7 @@
 export default {
 	"generic": {
 		'close': "Close",
-    'title': "Local Life",
+    'title': "LocalLife",
     'company': "Tite",
     'tagline': "Share, Discover, Benefit",
 		'downloadHeader': "Share, Discover, Benefit",

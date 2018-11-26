@@ -5,6 +5,7 @@
     Service.section__each
     Information.section__each
     Download.section__each
+    Mission.section__each
     Footer
     Kakao
 </template>
@@ -15,6 +16,7 @@ import Hero from '@/components/Hero'
 import Service from '@/components/Service'
 import Information from '@/components/Information'
 import Download from '@/components/Download'
+import Mission from '@/components/Mission'
 import Footer from '@/components/Footer'
 import Kakao from '@/components/misc/Kakao'
 
@@ -33,6 +35,7 @@ export default {
     Service,
     Information,
     Download,
+    Mission,
     Footer,
     Kakao
   },
