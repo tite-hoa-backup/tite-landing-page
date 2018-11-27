@@ -16,7 +16,7 @@ export const globalVar = new Vue ({
     serviceKoFull: '로컬라이프',
     serviceEn: 'LocalLife',
 
-    iosStore: '#',
+    iosStore: 'https://itunes.apple.com/kr/app/id1368851880?mt=8',
     androidStore: '#',
 
     geolocate: '위치기반서비스 이용약관',
