@@ -16,8 +16,9 @@ export const globalVar = new Vue ({
     serviceKoFull: '로컬라이프',
     serviceEn: 'LocalLife',
 
+    websiteUrl: 'https://locallife.kr',
     iosStore: 'https://itunes.apple.com/kr/app/id1368851880?mt=8',
-    androidStore: '#',
+    androidStore: 'https://play.google.com/store/apps/details?id=com.tite.neighbors.android',
 
     geolocate: '위치기반서비스 이용약관',
     privacy: '개인정보처리방침',

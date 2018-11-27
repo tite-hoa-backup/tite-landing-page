@@ -7,6 +7,7 @@ import About from '@/pages/About'
 import Geolocate from '@/pages/tos/Geolocate'
 import Privacy from '@/pages/tos/Privacy'
 import Terms from '@/pages/tos/Terms'
+import RedirectDL from '@/pages/RedirectDL'
 
 Vue.use(VueRouter)
 Vue.use(Meta)
@@ -42,6 +43,11 @@ export default new VueRouter({
       path: '/tos/terms',
       name: 'terms',
       component: Terms
+    },
+    {
+      path: '/redirectdl',
+      name: 'redirectdl',
+      component: RedirectDL,
     },
   ]
 })
