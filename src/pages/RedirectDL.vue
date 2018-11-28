@@ -2,7 +2,6 @@
 import {globalVar} from '@/globalVar'
 
 export default {
-  name: 'redirectdl',
   data () {
     return {
       userAgent: undefined,

@@ -45,8 +45,7 @@ export default new VueRouter({
       component: Terms
     },
     {
-      path: '/redirectdl',
-      name: 'redirectdl',
+      path: '/app',
       component: RedirectDL,
     },
   ]
