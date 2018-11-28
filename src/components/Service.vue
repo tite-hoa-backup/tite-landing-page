@@ -23,7 +23,7 @@ export default {
     return {
       serviceList: {
         events: {
-          title: '우리동네 이벤트 소식',
+          title: '우리동네 핫이슈',
         },
         store: {
           title: '이웃과의 중고장터',

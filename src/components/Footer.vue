@@ -7,9 +7,9 @@
 
         p.footer__copyright--info
           span 사업자등록번호: {{ companyID }}
-          span 대표이사: {{ companyCEO }}
-          span 주소: {{ companyAdr }}
-          span 대표전화: {{ callTo }}
+          span 대표이사: John Ham
+          //- span 주소: {{ companyAdr }}
+          //- span 대표전화: {{ callTo }}
           span.clipboard(
             @click="toast"
             v-clipboard:copy="mailTo"
@@ -91,7 +91,7 @@ export default {
   .footer__copyright {
     margin: 0 auto;
     color: $text999;
-    // max-width: 640px;
+    max-width: 640px;
 
     .footer__copyright--text,
     .footer__copyright--info,
