@@ -7,6 +7,18 @@ export default {
       userAgent: undefined,
     }
   },
+  metaInfo: {
+    title: globalVar.serviceKo + ', ' + globalVar.serviceEn,
+    titleTemplate: '%s' + '앱 다운로드',
+    meta: [
+      {
+        name:     'description',         content: globalVar.serviceKo + '앱 다운로드',
+        itemprop: 'description',         content: globalVar.serviceKo + '앱 다운로드',
+        property: 'og:description',      content: globalVar.serviceKo + '앱 다운로드',
+        name:     'twitter:description', content: globalVar.serviceKo + '앱 다운로드',
+      }
+    ]
+  },
 
   created () {
     let userAgent = navigator.userAgent || navigator.vendor || window.opera;
