@@ -44,11 +44,24 @@ export default {
   background-color: #fff;
   @include box-shadow();
 
-  // @media #{$safari} {
-  //   backdrop-filter: saturate(180%) blur(20px);
-  //   -webkit-backdrop-filter: saturate(180%) blur(20px);
-  //   background-color: rgba(255,255,255,0.85) !important;
-  // }
+  // safari
+  @supports (-webkit-appearance:none) {
+    background-color: hsla(0,0%,100%,.85);
+    -webkit-backdrop-filter: saturate(180%) blur(16px);
+            backdrop-filter: saturate(180%) blur(16px);
+  }
+
+  // edge
+  @supports (-ms-ime-align:auto) {
+    background-color: hsla(0,0%,100%,.85);
+    -webkit-backdrop-filter: saturate(180%) blur(16px);
+            backdrop-filter: saturate(180%) blur(16px);
+  }
+
+  @media #{$ie}      { background-color: #fff; }
+  @media #{$chrome}  { background-color: #fff; }
+  @media #{$firefox} { background-color: #fff; }
+
 
   .header__left {
     cursor: pointer;
