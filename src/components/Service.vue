@@ -22,7 +22,7 @@ export default {
   data () {
     return {
       serviceList: {
-        events: {
+        chat: {
           title: '다양한 동네 토픽',
         },
         store: {
