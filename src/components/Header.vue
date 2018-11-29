@@ -46,14 +46,14 @@ export default {
 
   // safari
   @supports (-webkit-appearance:none) {
-    background-color: hsla(0,0%,100%,.85);
+    background-color: hsla(0, 0%, 100%, .8);
     -webkit-backdrop-filter: saturate(180%) blur(16px);
             backdrop-filter: saturate(180%) blur(16px);
   }
 
   // edge
   @supports (-ms-ime-align:auto) {
-    background-color: hsla(0,0%,100%,.85);
+    background-color: hsla(0, 0%, 100%, .8);
     -webkit-backdrop-filter: saturate(180%) blur(16px);
             backdrop-filter: saturate(180%) blur(16px);
   }
