@@ -7,6 +7,7 @@ export default {
       userAgent: undefined,
     }
   },
+
   metaInfo: {
     title: globalVar.serviceKo + ', ' + globalVar.serviceEn,
     titleTemplate: '%s' + '앱 다운로드',
