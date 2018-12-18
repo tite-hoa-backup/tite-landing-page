@@ -46,16 +46,18 @@ export default {
 
   // safari
   @supports (-webkit-appearance:none) {
+    @include box-shadow(0);
     background-color: hsla(0, 0%, 100%, .8);
-    -webkit-backdrop-filter: saturate(180%) blur(16px);
-            backdrop-filter: saturate(180%) blur(16px);
+    -webkit-backdrop-filter: saturate(100%) blur($grid6x);
+            backdrop-filter: saturate(100%) blur($grid6x);
   }
 
   // edge
   @supports (-ms-ime-align:auto) {
+    @include box-shadow(0);
     background-color: hsla(0, 0%, 100%, .8);
-    -webkit-backdrop-filter: saturate(180%) blur(16px);
-            backdrop-filter: saturate(180%) blur(16px);
+    -webkit-backdrop-filter: saturate(100%) blur($grid6x);
+            backdrop-filter: saturate(100%) blur($grid6x);
   }
 
   @media #{$ie}      { background-color: #fff; }
