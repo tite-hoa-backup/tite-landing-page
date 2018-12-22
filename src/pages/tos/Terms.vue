@@ -1,5 +1,6 @@
 <template>
   <div id="terms">
+    <PageIndicator></PageIndicator>
     <div class="terms-wrapper">
         <h1>{{ serviceKo }} {{ terms }}</h1>
 
@@ -161,6 +162,7 @@
 <script>
 import {globalVar} from '@/globalVar'
 import CloseBtn from '@/components/misc/CloseBtn'
+import PageIndicator from '@/components/misc/PageIndicator'
 
 export default {
   name: 'terms',
@@ -185,7 +187,8 @@ export default {
   },
 
   components: {
-    CloseBtn
+    CloseBtn,
+    PageIndicator,
   },
 
   updated () {
