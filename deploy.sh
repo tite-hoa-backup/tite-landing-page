@@ -1,7 +1,9 @@
 #!/bin/bash
 
-# run on a local server with gulpfile.js
 sudo gulp watch
+
+
+npm run dev
 
 # build
 npm run build
