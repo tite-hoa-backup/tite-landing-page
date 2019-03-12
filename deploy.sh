@@ -13,6 +13,7 @@ npm run build
 firebase deploy
 
 # get commit message
+printf "\n"
 read -p "Enter commit message: " commitmsg
 
 # commit
