@@ -1,4 +1,9 @@
 #!/bin/bash
+prjname="tite-landing-page"
+
+echo "=============================="
+echo ${prjname}
+echo "=============================="
 
 # task runner
 sudo gulp watch
