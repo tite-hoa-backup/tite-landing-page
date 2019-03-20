@@ -20,10 +20,17 @@ firebase deploy
 # get commit message
 printf "\n"
 IFS= read -r -p "Enter commit message: " commitmsg
+git add .
 
 # commit
-git add .
-git commit -m "$commitmsg"
+if [ -z "$commitmsg" ]
+then
+    echo "commit message is empty"
+    git commit -m "Add files via upload"
+else
+    git commit -m "$commitmsg"
+fi
+
 git push
 
 exit
