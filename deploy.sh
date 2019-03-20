@@ -1,8 +1,6 @@
-#!/bin/bash
-prjname="tite-landing-page"
-
+#!/bin/bash]
 echo "=============================="
-echo ${prjname}
+echo "${PWD##*/}"
 echo "=============================="
 
 # task runner
