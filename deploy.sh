@@ -4,12 +4,12 @@ echo "${PWD##*/}"
 echo "=============================="
 
 # task runner
-sudo gulp watch
+gulp watch
 
-# run on a local server
+# serve with hot reload at localhost:8080
 npm run dev
 
-# build
+# build for production with minification
 npm run build
 
 # deploy with firebase cli
