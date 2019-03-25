@@ -4,7 +4,7 @@ echo "${PWD##*/}"
 echo "=============================="
 
 # task runner
-gulp watch
+sudo gulp watch
 
 # serve with hot reload at localhost:8080
 npm run dev
