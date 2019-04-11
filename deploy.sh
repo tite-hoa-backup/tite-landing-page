@@ -9,6 +9,29 @@ echo "${BOLD}${PWD##*/}${RESET}"
 echo "============================================================"
 
 #============================================================
+# run dev server or deploy directly
+#============================================================
+dev_or_deploy() {
+  while true; do
+    printf "\n"
+    read -p "${BOLD}${GREEN}Run dev server(R) or Deploy directly?(D) ${RESET}" yn
+    case ${yn} in
+      [Rr]* )
+        image_resizer
+        npm_run_dev
+        npm_run_build
+        firebase_deploy
+        git_commit
+        git_push
+        break;;
+
+      [Dd]* ) npm run build && firebase deploy; break;;
+      * ) echo "Please answer R(un) or D(eploy).";;
+    esac
+  done
+}
+
+#============================================================
 # run gulpfile.js image resizer
 #============================================================
 image_resizer() {
@@ -121,12 +144,7 @@ git_push() {
 # main
 #============================================================
 main() {
-  image_resizer
-  npm_run_dev
-  npm_run_build
-  firebase_deploy
-  git_commit
-  git_push
+  dev_or_deploy
 }
 
 main
