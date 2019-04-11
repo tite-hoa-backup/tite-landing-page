@@ -14,8 +14,8 @@ echo "============================================================"
 dev_or_deploy() {
   while true; do
     printf "\n"
-    read -p "${BOLD}${GREEN}Run dev server(R) or Deploy directly?(D) ${RESET}" yn
-    case ${yn} in
+    read -p "${BOLD}${GREEN}Run dev server(R) or Deploy directly?(D) ${RESET}" rd
+    case ${rd} in
       [Rr]* )
         image_resizer
         npm_run_dev
@@ -131,7 +131,7 @@ git_commit() {
 git_push() {
   while true; do
     printf "\n"
-    read -p "${BOLD}git push? (Y/n) ${RESET}" yn
+    read -p "${BOLD}${GREEN}git push? (Y/n) ${RESET}" yn
     case ${yn} in
       [Yy]* ) git push; break;;
       [Nn]* ) return 0;;
