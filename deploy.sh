@@ -133,7 +133,10 @@ git_push() {
     printf "\n"
     read -p "${BOLD}${GREEN}git push? (Y/n) ${RESET}" yn
     case ${yn} in
-      [Yy]* ) git push; break;;
+      [Yy]* )
+        git push origin;
+        git push github;
+        break;;
       [Nn]* ) return 0;;
       * ) echo "Please answer yes or no.";;
     esac
